@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* debug  */
+/* .col-md-2 {
+  height: 100px;
+  background-color: blue;
+}
+.col-md-5 {
+  height: 100px;
+  background-color: pink;
+} */
+
+
+/* Utility */
+
+ .wrapper {
+  max-width: 1000px;
+  background-color: lightgreen;
+  margin: 0 auto;
+}
+ .text_white {
+   color: white;
+ }
+.text_blue {
+  color: blue;
+}
+
+.bg_grey {
+  background-color: #eeeeee;
+}
+
+
+
+/* header */
+#logo {
+  width: 100%;
+}
+
+.ms_nav {
+  height: 80px;
+  line-height: 80px;
+}
+
+
+.ms_nav_item ul li {
+  display: inline;
+  list-style: none;
+  padding-right: 10px;
+}
+.ms_nav_item ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+i.hamburger {
+  display: inline;
+  font-size: 40px;
+  color: black;
+}
+
+/* jumbotron */
+
+.jumbotron-fluid {
+  background-image: url("../img/jumbo.svg");
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.jumbo_text {
+  padding: 50px;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: white;
+}
+
+.btn_form {
+  width: 100%;
+}
+.btn-default {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+img.google_icon {
+  width: 20px;
+  float: left;
+}
+
+.bg_grey {
+  height: 400px;
+}
