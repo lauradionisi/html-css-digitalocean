@@ -17,25 +17,28 @@ body {
   background-color: pink;
 } */
 
-[class*="col-"] {
+/* [class*="col-"] {
   border: 1px solid red;
-}
+} */
+
 /* Utility */
 
  .wrapper {
   width: 70%;
-  background-color: lightgreen;
   margin: 0 auto;
 }
+
  .text_white {
    color: white;
  }
+
 .text_blue_link {
   color: blue;
 }
 
 .text_blue_title {
   color: #031B4E;
+  font-weight: 700;
 }
 
 .bg_grey {
@@ -43,13 +46,20 @@ body {
 }
 
 .ms_margin {
-  margin-left:-15px;
-  margin-right:-15px;
+  margin-top: 30px;
 }
 
 
-
 /* header */
+header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+}
+
 #logo {
   width: 172px;
   height: 28px;
@@ -61,13 +71,11 @@ body {
 
 }
 
-
 .ms_nav_item ul li {
   display: inline-block;
   list-style: none;
   padding-right: 0;
 }
-
 .ms_nav_item ul li a {
   color: black;
   text-decoration: none;
@@ -145,11 +153,12 @@ img.google_icon {
 
 .row_deploy {
   margin-bottom: 50px;
-
 }
+
 .col_left {
   margin-bottom: 30px;
 }
+
 .btn_col {
   border-left: 1px solid grey;
 }
@@ -166,29 +175,92 @@ img.google_icon {
   width: 70%;
   margin: 0 auto;
 }
+
 .carousel img{
   width: 100%;
+  margin-bottom: 20px;
 }
 
 
+/* sezione regions */
+.row_regions {
+  padding-top: 40px;
+  background-color: #00239e;
+}
+
+.row_regions ul li {
+  list-style: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.codice {
+  padding-right: 50px;
+}
+
+.link_regions {
+  float: right;
+  color: #00d7d2;
+}
 
 
+/* footer */
 
+.footer_top {
+  background-color: #00239e;
+  padding: 50px;
+}
 
-/* madia query */
+.btn.btn-outline-primary {
+  color: #1035b9;
+  margin-top: 20px;
+}
+
+.footer_bottom {
+  background-color: #031c4e;
+  color: #a6a6a6;
+  padding: 50px;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+i.logo_social {
+  color: #a6a6a6;
+  padding-left: 10px;
+}
+
+.footer_text ul li {
+  list-style: none;
+  line-height: 200%;
+}
+
+.shark {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+}
+.shark img {
+  max-width: 60px;
+}
+
+/* media query */
 @media screen and (max-width: 768px) {
   .bg_grey {
     height: 500px;
   }
 
-.btn_col {
-  text-align: center;
+  .btn_col {
+    text-align: center;
 }
 }
 
-@media screen and (min-width: 769px max-width: 1200px ) {
+@media screen and (max-width: 1200px) and (min-width: 769px) {
 
-.btn_col {
-  text-align: center;
+  .btn_col {
+    text-align: center;
 }
 }
