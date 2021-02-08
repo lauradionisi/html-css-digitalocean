@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
@@ -11,12 +13,12 @@
   <body>
     <header>
       <div class="wrapper">
-          <div class="row ms_nav">
-          <nav class="navbar navbar-fixed">
-            <div class="col-md-2 col-sm-2 col-xs-2">
+        <div class="row ms_nav">
+          <nav class="navbar-fixed">
+            <div class="col-md-3 col-sm-2 col-xs-2">
               <a href="#"><img id="logo" src="img/logo.png" alt=""></a>
             </div>
-            <div class="ms_nav_item col-md-5">
+            <div class="ms_nav_item col-md-5 visible-lg visible-md">
               <ul>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Customers</a></li>
@@ -24,7 +26,7 @@
                 <li><a href="#">Pricing</a></li>
               </ul>
             </div>
-            <div class="ms_nav_item text-right col-md-5 visible-lg visible-md">
+            <div class="ms_nav_item text-right col-md-4 visible-lg visible-md">
               <ul>
                 <li><a href="#">Docs</a></li>
                 <li><a href="#">Support</a></li>
@@ -32,10 +34,10 @@
                 <button class="btn btn-primary" type="button" name="button">Sign Up</button>
               </ul>
             </div>
-            <!-- <nav class="text-right hidden-lg hidden-md">
+            <nav class=" hidden-lg hidden-md text-right">
               <i class="hamburger fas fa-bars"></i>
             </nav>
-          </nav> -->
+          </nav>
         </div>
       </div>
     </header>
@@ -50,7 +52,7 @@
               </div>
               <div class="col-md-6 form col-sm-6 text-center">
                 <h2>Deploy your app in seconds.</h2>
-                <h2 class="text_blue">Get started now.</h2>
+                <h2 class="text_blue_link">Get started now.</h2>
                 <div class="form-group">
                   <input type="email" placeholder="Email" class="form-control" id="email">
                 </div>
@@ -59,7 +61,7 @@
                 </div>
                 <button class="btn btn-primary btn_form" type="button" name="button">Create your Account</button>
                 <button class="btn btn-default btn_form" type="button" name="button"><img class="google_icon" src="img/google-icon.png" alt="google-icon">Sign up with google</button>
-                <p>By signing up you agree to the <a href="#">Terms of Services</a></p>
+                <p>By signing up you agree to the <a class="text_blue_link" href="#">Terms of Services</a></p>
               </div>
             </div>
         </div>
@@ -67,13 +69,14 @@
 
 <!-- main -->
     <main>
+<!-- SEZIONE LOGHI -->
       <div class="container-fluid">
         <div class="row bg_grey">
           <div class="wrapper">
             <div class="col-lg-12">
               <h3 class="text-uppercase text-center">innovative businesses trust digitalocean</h3>
             </div>
-            <div class="logo_container text-center">
+            <div class="logo_container">
               <div class="col-xs-6 col-sm-2 col-md-2">
                 <div class="box">
                   <img src="img/logo_docker.svg" alt="docker">
@@ -104,14 +107,77 @@
                   <img src="img/logo_splunk.svg" alt="splunk">
                 </div>
               </div>
-              <div class="col-lg-12">
-                <a href="#">View customer stories ></a>
+              <div class="view_stories col-lg-12 col-md-12 col-xs-12">
+                <a class="text_blue_link" href="#">View customer stories ></a>
+              </div>
+           </div>
+         </div>
+       </div>
+      </div>
+<!-- SEZIONE DEPLOY E SCALE -->
+
+      <div class="container-fluid">
+        <div class="wrapper">
+          <div class="row_deploy text-center">
+            <h1 class="text_blue_title">Deploy and scale seamlessly</h1>
+            <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+          </div>
+          <div class="row">
+            <div class="col_left col-lg-4 col-md-4">
+              <div class="btn_col col-lg-4 col-md-4">
+                <button type="button" class="btn ms_btn">Deploy</button>
+                <button type="button" class="btn ms_btn">Manage</button>
+                <button type="button" class="btn ms_btn">Secure</button>
+                <button type="button" class="btn ms_btn">Scale</button>
+                <button type="button" class="btn ms_btn">Monitor</button>
               </div>
             </div>
-          </div>
+            <div class="col_right col-lg-8 col-md-8">
+              <div class="col-md-12 col-sm-12">
+                <div class="col-lg-6">
+                  <img src="img/cluster-deploy.svg" alt="">
+                  <h4 class="text_blue_title font-weight-bold">Cluster deployments</h4>
+                  <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, ClI, or directly against our API.</p>
+                </div>
+                <div class="col-lg-6">
+                  <img src="img/optimized-compute.svg" alt="">
+                  <h4 class="text_blue_title font-weight-bold">Optimized compute types</h4>
+                  <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-sm-12">
+                <div class="col-lg-6">
+                  <img src="img/one-click.svg" alt="">
+                  <h4 class="text_blue_title font-weight-bold">One-click apps</h4>
+                  <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                </div>
+                <div class="col-lg-6">
+                  <img src="img/global.svg" alt="">
+                  <h4 class="text_blue_title font-weight-bold">Global availability</h4>
+                  <p>deploy to any of our data center regions around the world.</p>
+                </div>
+              </div>
+            </div>
+         </div>
         </div>
       </div>
-    </main>
+
+<!-- SEZIONE CAROUSEL -->
+
+      <div class="container-fluid bg_grey">
+        <div class="wrapper">
+          <div class="row text-center">
+            <h1 class="text_blue_title">Designed for developers</h1>
+            <p>Build more and spend less managing your infrastructure with our easy-to-use control panel and API.</p>
+          </div>
+          <div class="carousel">
+            <img src="img/createdroplet.jpg" alt="">
+          </div>
+          <h3 class="text_blue_title text-center">Create compute servers i 55 seconds or less. </h3>
+        </div>
+      </div>
+   </main>
 
 
 

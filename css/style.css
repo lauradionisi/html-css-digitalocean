@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body {
+ font-family: 'Inter', sans-serif;
+}
 /* debug  */
 /* .col-md-2 {
   height: 100px;
@@ -27,39 +30,53 @@
  .text_white {
    color: white;
  }
-.text_blue {
+.text_blue_link {
   color: blue;
 }
 
+.text_blue_title {
+  color: #031B4E;
+}
+
 .bg_grey {
-  background-color: #eeeeee;
+  background-color: #f3f5f9;
+}
+
+.ms_margin {
+  margin-left:-15px;
+  margin-right:-15px;
 }
 
 
 
 /* header */
 #logo {
-  width: 100%;
+  width: 172px;
+  height: 28px;
 }
 
 .ms_nav {
   height: 80px;
   line-height: 80px;
+
 }
 
 
 .ms_nav_item ul li {
-  display: inline;
+  display: inline-block;
   list-style: none;
-  padding-right: 10px;
+  padding-right: 0;
 }
+
 .ms_nav_item ul li a {
   color: black;
   text-decoration: none;
 }
 
 i.hamburger {
-  display: inline;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 20px;
   font-size: 40px;
   color: black;
 }
@@ -97,20 +114,81 @@ img.google_icon {
 }
 
 .bg_grey {
-  height: 300px;
+  height: auto;
 }
 
 
 /* main */
+
+/* sezione loghi */
+.view_stories {
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
 .logo_container {
   width: 100%;
   height: 50px;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .box img {
   margin-top: 10px;
   width: 100%;
   height: 80px;
+}
+
+/* sezione deploy e scale */
+
+.row_deploy {
+  margin-bottom: 50px;
+
+}
+.col_left {
+  margin-bottom: 30px;
+}
+.btn_col {
+  border-left: 1px solid grey;
+}
+
+.ms_btn {
+  background-color: white;
+  padding: 10px;
+}
+
+
+/* sezione carousel */
+
+.carousel {
+  width: 70%;
+  margin: 0 auto;
+}
+.carousel img{
+  width: 100%;
+}
+
+
+
+
+
+
+/* madia query */
+@media screen and (max-width: 768px) {
+  .bg_grey {
+    height: 500px;
+  }
+
+.btn_col {
+  text-align: center;
+}
+}
+
+@media screen and (min-width: 769px max-width: 1200px ) {
+
+.btn_col {
+  text-align: center;
+}
 }
