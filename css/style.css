@@ -14,11 +14,13 @@
   background-color: pink;
 } */
 
-
+[class*="col-"] {
+  border: 1px solid red;
+}
 /* Utility */
 
  .wrapper {
-  max-width: 1000px;
+  width: 70%;
   background-color: lightgreen;
   margin: 0 auto;
 }
@@ -95,5 +97,20 @@ img.google_icon {
 }
 
 .bg_grey {
-  height: 400px;
+  height: 300px;
+}
+
+
+/* main */
+.logo_container {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.box img {
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
 }
